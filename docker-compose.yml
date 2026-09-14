@@ -17,4 +17,5 @@ services:
       - "5003:5003"
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - /etc/letsencrypt:/etc/letsencrypt:ro7
     restart: unless-stopped
