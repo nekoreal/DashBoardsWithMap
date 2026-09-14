@@ -14,8 +14,8 @@ services:
     depends_on:
       - app
     ports:
-      - "5003:5003"
+      - "5004:5004"
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
-      - /etc/letsencrypt:/etc/letsencrypt:ro7
+      - /etc/letsencrypt:/etc/letsencrypt:ro
     restart: unless-stopped
